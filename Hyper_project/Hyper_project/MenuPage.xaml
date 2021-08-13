@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hyper_project.MenuPage"
+             BackgroundImageSource="main_back.png">
+
+        <StackLayout Margin="10,250,10,10">
+            <!-- Place new controls here -->
+            
+                <Button Text="Artículos" 
+                    BackgroundColor="DarkCyan"
+                    FontSize="Large"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    Clicked="OnClicked"
+                    Margin="0,0,0,10"
+                    />
+                <Button Text="Clientes" 
+                    BackgroundColor="DarkCyan"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    TextColor="White"
+                    Clicked="OnClicked"
+                    Margin="0,0,0,10"
+                    />
+                <Button Text="Crear documento" 
+                    BackgroundColor="DarkCyan"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    TextColor="White"
+                    Clicked="OnClicked"
+                    Margin="0,0,0,10"
+                    />
+                <Button Text="Ver documentos" 
+                    BackgroundColor="DarkCyan"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    TextColor="White"
+                    Clicked="OnClicked"
+                    Margin="0,0,0,30"
+                    />
+                <Button Text="Salir" 
+                    BackgroundColor="SaddleBrown"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    TextColor="black"
+                    Clicked="NavigateButton_OnClicked"
+                    />
+            
+            
+    </StackLayout>
+
+    
+ 
+</ContentPage>

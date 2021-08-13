@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"             
+             xmlns:local="clr-namespace:Hyper_project"              
+             x:Class="Hyper_project.MainPage"
+             BackgroundImageSource="main_back.png">
+    
+    
+
+    <StackLayout Margin="20,250,20,20">
+        <!-- Place new controls here -->
+
+        <StackLayout>
+            <Picker x:Name="user"
+                    Title="Usuario"
+                    TitleColor="Gray"
+                    TextColor="White"
+                    FontSize="Large"
+                    Margin="0,0,0,10"
+                    >
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Entry x:Name="pass"
+                   FontSize="Large"
+                   TextColor="Azure"
+                   Placeholder="Contraseña"
+                   PlaceholderColor="Gray"
+                   IsPassword="True"
+                   Margin="0,0,0,10"
+                   />
+
+            <Button Text="Entrar" 
+                    BackgroundColor="DarkCyan"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    BorderWidth="2.5"
+                    Clicked="NavigateButton_OnClicked"
+                    Margin="0,0,0,10"
+                    />
+
+            <Button Text="Salir" 
+                    BackgroundColor="SaddleBrown"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    TextColor="White"
+                    Clicked="ExitButton_OnClicked"
+                    />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Margin="160,190,0,0">
+            <Label Text="Powered by" TextColor="white" />
+            <Image  Source="logo.png" WidthRequest="100" />
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
